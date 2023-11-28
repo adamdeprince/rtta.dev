@@ -1,0 +1,35 @@
+<html>
+  <header>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/static/heart.jpg">
+    <link rel="stylesheet" href="/static/base.css"/>
+
+    {%block header%}
+    
+    {%endblock%}
+  </header>
+  <body>
+    <div id="header">
+      <div id="home">
+	<a href="/">Home</a>
+      </div>
+      <div id="install">
+	<a href="/install">Install</a>
+      </div>
+      <div id="overview">
+	<a href="/overview">Overview</a>
+      </div>
+      <div id="github">
+	<a href="https://github.com/adamdeprince/rtta">
+	  Source code
+	</a>
+      </div>
+    </div>
+    <main>
+      {%block main%}
+      
+      {%endblock%}
+    </main>
+  </body>
+</html>

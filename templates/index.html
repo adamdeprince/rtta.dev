@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<h1>RTTA: Real Time Technical Analyisis</h1>
+
+<p>RTTA is a new project.  At this point we only have a small number
+of technical analysis in our code base, but that is rapidly changing.
+Our project goals are: </p>
+
+<ol>
+  <li>To eventually have the most complete technical analysis library.  We're not there yet, but we're growing at the rate of about one analysis per day.</li>
+  <li>To have the highest performance technical analysis</li>
+  <li>To support incremental updates for all of our operations, and do so efficiently. </li>
+</ol>
+
+<p>We only have a small number of operations but our
+  performance numbers are promising.  Our goal is to add one technical
+  analysis per day and to ensure that this analysis is correct,
+  matches existing libraries in its output and outperforms other
+  libraries.</p>
+<p>So far we're off to a good start.  Our exponential moving average
+(EMA) processes 10k items in 14us on a 5995WX compared to ta-lib's
+20us.  For incremental updates, well most libraries don't perform
+incremental computations.  talipp does, but does so 12 times slower
+than RTTA for the case of an EMA. </p>
+
+<p>If you are looking to help accelerate RTTA's development feel free
+to share a <a href="https://github.com/adamdeprince/rtta">pull
+request.</a></p>
+
+{% endblock %}
